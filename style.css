@@ -1,0 +1,68 @@
+* {
+  font-family: "Fantasy", "Papyrus", monospace;
+}
+
+body {
+  background-image: linear-gradient(black, white);
+  font-size: 16px;
+}
+
+#title {
+  color: white;
+  font-size: 2.5em;
+  text-align: center;
+  padding-top: 1em;
+}
+
+.wrapper {
+  position: fixed;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+}
+
+.game {
+  width: 49vmin;
+  height: 49vmin;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2vmin;
+}
+
+.cell {
+  background: white;
+  height: 15vmin;
+  width: 15vmin;
+  border: none;
+  border-radius: 4px;
+  font-size: 8vmin;
+  color: black;
+}
+
+.cell:hover {
+  background-color: lightgray;
+}
+
+#res {
+  background-color: black;
+  color: white;
+  font-size: 1.5em;
+  font-weight: 1000;
+  padding: 0.5em 1em;
+  border-radius: 100px;
+  margin: 1.5em auto 0 auto;
+  display: block;
+}
+
+#res:hover {
+  cursor: pointer;
+  background-color: white;
+  color: black;
+  border: none;
+}
+
+#winner {
+  font-size: 1.5em;
+  text-align: center;
+  color: black;
+}
